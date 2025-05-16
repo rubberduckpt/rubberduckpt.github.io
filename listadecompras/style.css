@@ -1,0 +1,133 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #004d00; /* Verde escuro */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha ao topo */
+    min-height: 100vh;
+    padding-top: 20px; /* Espaço no topo */
+}
+
+.container {
+    background-color: #006600; /* Um pouco mais claro para o container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 95%; /* Ocupa quase toda a largura no móvel */
+    max-width: 500px; /* Largura máxima para ecrãs maiores */
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #a3e635; /* Verde lima */
+    margin-top: 0;
+}
+
+#main-screen, #edit-screen {
+    display: none; /* Esconde ambos por padrão, JS mostrará o correto */
+}
+
+#main-screen.active, #edit-screen.active {
+    display: block;
+}
+
+#view-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#view-list li {
+    background-color: #008000; /* Verde */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    word-break: break-word; /* Quebra palavras longas */
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #a3e635; /* Verde lima */
+    color: #004d00; /* Verde escuro */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #84cc16; /* Verde lima mais escuro */
+}
+
+#edit-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#edit-list li {
+    background-color: #008000; /* Verde */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-word; /* Quebra palavras longas */
+}
+
+#edit-list li button {
+    background-color: #ef4444; /* Vermelho */
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+#edit-list li button:hover {
+    background-color: #dc2626; /* Vermelho mais escuro */
+}
+
+#add-item-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#add-item-container input[type="text"] {
+    flex-grow: 1;
+    flex-basis: 0; /* Adicionado para melhor comportamento de quebra de linha */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #000000;
+    min-width: 150px; /* Garante que o input tem um tamanho mínimo */
+}
+
+#add-item-container button {
+     background-color: #a3e635; /* Verde lima */
+    color: #004d00; /* Verde escuro */
+}
+
+#clear-list-button {
+    background-color: #ef4444; /* Vermelho */
+    color: white;
+    margin-top: 20px;
+    width: 100%; /* Botão de limpar ocupa toda a largura */
+}
+
+ #clear-list-button:hover {
+    background-color: #dc2626; /* Vermelho mais escuro */
+}
