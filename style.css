@@ -106,12 +106,14 @@ button:hover {
 
 #add-item-container input[type="text"] {
     flex-grow: 1;
+    flex-basis: 0; /* Adicionado para melhor comportamento de quebra de linha */
     padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 1em;
     background-color: #ffffff;
     color: #000000;
+    min-width: 150px; /* Garante que o input tem um tamanho mínimo */
 }
 
 #add-item-container button {
