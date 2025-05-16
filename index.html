@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <div id="main-screen" class="active">
+            <h1>Minha Lista de Compras</h1>
+            <div class="button-container">
+                <button id="go-to-edit">Editar Lista</button>
+            </div>
+            <ul id="view-list">
+                </ul>
+        </div>
+
+        <div id="edit-screen">
+            <h1>Editar Lista de Compras</h1>
+             <div class="button-container">
+                <button id="go-to-main">Ver Lista</button>
+            </div>
+
+            <div id="add-item-container">
+                <input type="text" id="new-item" placeholder="Adicionar novo item...">
+                <button id="add-item-button">Adicionar</button>
+            </div>
+
+            <ul id="edit-list">
+                </ul>
+
+            <button id="clear-list-button">Limpar Lista Completa</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
